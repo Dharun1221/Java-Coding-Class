@@ -1,4 +1,6 @@
 # Java-Coding-Class
+DECISION STATEMENTS 
+* If Statements
 1.
 public class Main
 {
@@ -64,9 +66,46 @@ public class Main
 	    }
 	}
 }
+
 5.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner dh = new Scanner(System.in);
+	    int n = dh.nextInt();
+	    if(n>0)	System.out.println("Pos");
+	    else if (n<0) System.out.println("Neg");
+	    else System.out.println("Zero");
+		
+	    
+	}
+}
 
-
+*Switch Statements
+1.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner dh = new Scanner(System.in);
+	    int n = dh.nextInt();
+	    switch(n){
+	        case 1:
+	            System.out.println("Withdrawal");
+	            break;
+	        case 2:
+	            System.out.println("Deposit");
+	            break;
+	        case 3:
+	            System.out.println("Balance Check");
+	            break;
+	       default:
+	       System.out.println("Please enter between  1-3");
+	    }
+	    
+	}
+}
 
 
 
