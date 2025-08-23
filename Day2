@@ -107,6 +107,19 @@ public class Main
 	}
 }
 
+Without using If Else Check Even or Odd?
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner dh = new Scanner(System.in);
+	    int n = dh.nextInt();
+	    System.out.println((n%2==0)?("Even"):("Odd"));
+	}
+}
+
+
+
 
 
 
