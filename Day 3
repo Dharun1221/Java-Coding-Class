@@ -1,3 +1,5 @@
+Right To Left
+
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -12,3 +14,158 @@ class Main {
         
     }
 }
+
+Left To Right
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int count=0;
+        while (n>0)
+        {
+        n=n/10;
+        count++;
+        }
+        int div = (int)Math.pow(10, count-1);
+        while(div>0)
+        {
+            int digit = (temp/div)%10;
+            System.out.print(digit);
+            div=div/10;
+        }
+        }
+        
+    }
+
+Sum of the digit 
+    
+    import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0 ;
+        while (n>0)
+        {
+            int digit = n%10;
+            sum = sum+digit;
+            n = n/10;
+        }
+        System.out.print(sum);
+    }
+}
+
+Product Of Digit
+
+    import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int product = 1 ;
+        while (n>0)
+        {
+            int digit = n%10;
+            product= product * digit;
+            n = n/10;
+        }
+        System.out.print(product);
+    }
+}
+
+Reverse
+    
+    import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int rev = 0 ;
+        while (n>0)
+        {
+            int digit = n%10;
+            rev = rev * 10 + digit;
+            n = n/10;
+        }
+        System.out.print(rev);
+    }
+}
+
+Pallindrome
+
+ import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int rev = 0 ;
+        int temp = n;
+        while (n>0)
+        {
+            int digit = n%10;
+            rev = rev * 10 + digit;
+            n = n/10;
+        }
+        System.out.println(rev);
+        if(temp==rev)
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("Not A Palindrome");
+        }
+    }
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
