@@ -72,3 +72,39 @@ public class Main
 	    System.out.println(next);
 	}
 }
+
+4.) Perfect number :
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	     int sum = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (n % i == 0) {
+                sum += i;
+            }
+        }
+        if (sum == n)
+        {
+            System.out.println(n+"It is a Perfect Number");
+        }
+
+	    else
+	    {
+	        System.out.println(n+"It is not a Perfect Number");
+	    }
+	}
+}
+
+5.) Print 1-500 Perfect Numbers :
+
+
+
+6.) Sum of the Digits of integer :
+
+
