@@ -78,7 +78,73 @@ public class Main
 	}
 }
 
-4.) Least Common Factor :
+4.) Least Common Multiplier :
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number1: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter number2: ");
+        int b = sc.nextInt();
+
+        int max = (a > b) ? a : b;
+
+        for (int i = max; i <= a * b; i++) {
+            if (i % a == 0 && i % b == 0) { 
+                System.out.println("LCM = " + i);
+                break;
+            }
+        }
+	}
+}
+
+
+
+
+5.) Biggest and Smallest of a given number :
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
+        number = Math.abs(number);
+
+        int smallest = 9;
+        int largest = 0;
+
+        
+        if (number == 0) {
+            smallest = largest = 0;
+        } else {
+            while (number > 0) {
+                int digit = number % 10;
+                if (digit > largest)
+                    largest = digit;
+                if (digit < smallest)
+                    smallest = digit;
+                number /= 10;
+            }
+        }
+
+        System.out.println("Smallest digit: " + smallest);
+        System.out.println("Largest digit: " + largest);
+    }
+}
+
+	
+
+
 
 
 
