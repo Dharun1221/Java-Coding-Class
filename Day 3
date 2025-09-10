@@ -1,4 +1,4 @@
-Right To Left
+1.) Right To Left
 
 import java.util.Scanner;
 class Main {
@@ -15,7 +15,7 @@ class Main {
     }
 }
 
-Left To Right
+2.) Left To Right
 
 import java.util.Scanner;
 class Main {
@@ -40,7 +40,7 @@ class Main {
         
     }
 
-Sum of the digit 
+3.) Sum of the digit 
     
     import java.util.Scanner;
 class Main {
@@ -58,7 +58,7 @@ class Main {
     }
 }
 
-Product Of Digit
+4.) Product Of Digit
 
     import java.util.Scanner;
 class Main {
@@ -76,7 +76,7 @@ class Main {
     }
 }
 
-Reverse
+5.) Reverse
     
     import java.util.Scanner;
 class Main {
@@ -94,7 +94,7 @@ class Main {
     }
 }
 
-Pallindrome
+6.) Pallindrome
 
  import java.util.Scanner;
 class Main {
