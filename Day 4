@@ -182,6 +182,36 @@ public class strongnum {
     }
 }
 
+8.) Amstrong Number :
+
+package demo;
+
+import java.util.Scanner;
+
+public class armstrongnum {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();   
+        int arm = 0, a, d;
+        
+        d = n;  
+        while (n > 0) {
+            a = n % 10;             
+            n = n / 10;            
+            arm = arm + (a * a * a); 
+        }
+
+        if (arm == d) {
+            System.out.println(d + " is an Armstrong number");
+        } else {
+            System.out.println(d + " is NOT an Armstrong number");
+        }
+
+        sc.close();
+    }
+}
 
 
 
