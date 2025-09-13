@@ -38,4 +38,24 @@ public class Main
 }
 
 
+3.) Product of the Array :
 
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main{
+
+public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+	      System.out.print("enter array size");
+	      int size = sc.nextInt();
+	      int ece[]= new int [size];
+	      for(int i =0 ; i<size;i++) {
+	    	  ece[i]=sc.nextInt();
+	      System.out.println(ece[i]+" ");}
+	      int product= 1;
+	      for ( int a :ece) {
+	    	  product=product*a;
+	      }System.out.print(product);
+}
+}
