@@ -1,1 +1,41 @@
+1.) Array Program :
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int  size= sc.nextInt();
+      int ECE[]= new int [size];
+      for(int i =0 ; i<size;i++) {
+    	  ECE[i]=sc.nextInt();
+      }
+      System.out.print(Arrays.toString(ECE));
+	}
+}
+
+2.) Sum of the Array :
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	      System.out.print("enter array size");
+	      Scanner sc = new Scanner(System.in);
+	      int size = sc.nextInt();
+	      int ECE[]= new int [size];
+	      for(int i =0 ; i<size;i++) {
+	    	  ECE[i]=sc.nextInt();
+	      }
+	      System.out.print(Arrays.toString(ECE));
+	      int sum = 0;
+	      for ( int a :ECE) {
+	    	  sum=sum+a;
+	      }System.out.print(sum);
+	}
+}
+
+
 
